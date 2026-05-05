@@ -19,10 +19,13 @@
         }else{
           heading.textContent = `You are an adult ${age}`
         }
-        }
+      }
     };
-
 button.addEventListener("click",()=>{
    myFunc()
 });
-    
+input.addEventListener("keydown",(event)=>{
+  if(event.key === "Enter"){
+    myFunc();
+  }
+});
